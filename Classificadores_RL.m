@@ -49,11 +49,11 @@ for i=1:10
     X_train(:,7)=(X_train(:,7)-mediadif)/(stddif);
     X_test(:,7)=(X_test(:,7)-mediadif)/(stddif);
 
-%     %raca
-%     mediar=mean(X_train(:,14));
-%     stdr=std(X_train(:,14));
-%     X_train(:,14)=(X_train(:,4)-mediar)/(stdr);
-%     X_test(:,14)=(X_test(:,4)-mediar)/(stdr);
+    %raca
+    mediar=mean(X_train(:,14));
+    stdr=std(X_train(:,14));
+    X_train(:,14)=(X_train(:,4)-mediar)/(stdr);
+    X_test(:,14)=(X_test(:,4)-mediar)/(stdr);
 
 
     %%training set
