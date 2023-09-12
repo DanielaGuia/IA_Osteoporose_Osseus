@@ -76,8 +76,8 @@ for i=1:10
         sensitivity = tp/(tp + fn)  %TPR
         specificity = tn/(tn + fp)  %TNR
         precision = tp / (tp + fp);
-        Recall= tp/(tp + fn);
-        Fmeasure= (2*Recall*precision)/(Recall + precision);
+        
+        Fmeasure= (2*sensitivity*precision)/(sensitivity + precision);
         FPR = fp/(tn+fp);
 
         vector=[vector;[j,sensitivity, specificity,Fmeasure]];
